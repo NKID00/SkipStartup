@@ -1,8 +1,8 @@
-> Note: This mod is more likely to be an experiment on mod developing for DDLC+ and may not be stable enough since it comes from reverse engineering. I would appreciate it if you [open an issue](https://github.com/NKID00/SkipStartup/issues/new) to describe the situation when the mod malfunctions.
+> **Note: This mod is more likely to be an experiment on mod developing for DDLC+ and may not be stable enough since it comes from reverse engineering. I would appreciate it if you [open an issue](https://github.com/NKID00/SkipStartup/issues/new) to describe the situation when the mod malfunctions.**
 
 ## SkipStartup
 
-Skip most of the startup processes (Bios, Startup and Login) in [DDLC+](ddlc.plus) and present the desktop directly.
+Skip most of the startup processes (Bios, Startup and Login, **excluding the initial progress bar**) in [DDLC+](ddlc.plus) and present the desktop directly.
 
 ## Install & Uninstall (for non-developer users)
 
