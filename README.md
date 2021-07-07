@@ -8,7 +8,7 @@ Skip most of the startup processes (Bios, Startup and Login, **excluding the ini
 
 You need to have a copy of the PC version of the game to install this mod. **Console versions are not supported. This mod may conflict with other mods, please install this mod only on the vanilla game!**
 
-To install this mod, download the latest release and extract the zip file into the root directory of the game. Not such overwriting or modifying the original game files would happen.
+To install this mod, download the latest [release](https://github.com/NKID00/SkipStartup/releases) and extract the zip file into the root directory of the game. Not such overwriting or modifying the original game files would happen.
 
 To uninstall it, simply delete the files extracted in the installation process.
 
