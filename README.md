@@ -30,7 +30,7 @@ After building the mod, you still need a injector (like the [UnityDoorstop](http
 
 - Most of the game logics is written in the `DDLC.dll`.
 
-- The desktop environment in DDLC+ is divided into many `RenpyLauncher.LauncherApp`s and is managed by the class `RenpyLauncher.LauncherMain`. These apps will be loaded at start but only be switched to when necessary (and only one app can be switched to at once). This mod let the game switches to the `BiosApp`, `StartupApp` and `LoginApp` but does not run its normal sequence, then switches directly into the `DesktopApp`. I haven't figured out which part of the game controls the initial progress bar yet.
+- The desktop environment in DDLC+ is divided into many `RenpyLauncher.LauncherApp`s and is managed by the class `RenpyLauncher.LauncherMain`. These apps will be loaded at start but only be switched to when necessary (and only one app can be switched to at once). This mod let the game switches to the `RenpyLauncher.BiosApp`, `RenpyLauncher.StartupApp` and `RenpyLauncher.LoginApp` but does not run its normal sequence, then switches directly into the `RenpyLauncher.DesktopApp`. I haven't figured out which part of the game controls the initial progress bar yet.
 
 ## License
 
