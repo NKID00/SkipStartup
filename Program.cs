@@ -17,7 +17,7 @@ namespace SkipStartup
         {
             RenpyLauncher.LauncherParameters.Initialize("renpymain", skipPersistentData: false);
             
-            var SaveManager = Traverse.Create(__instance).Field<LauncherSaveManager>("m_SaveManager").Value;
+            var SaveManager = Traverse.Create(__instance).Field<RenpyLauncher.LauncherSaveManager>("m_SaveManager").Value;
            
             if (SaveManager.HasIteractedFile().GetAwaiter().GetResult())
             {
