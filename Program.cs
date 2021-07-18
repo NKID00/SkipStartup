@@ -18,15 +18,8 @@ namespace SkipStartup
             RenpyLauncher.LauncherParameters.Initialize("renpymain", skipPersistentData: false);
             
             var SaveManager = Traverse.Create(__instance).Field<LauncherSaveManager>("m_SaveManager").Value;
-            
-            RenpyLauncher.LauncherAppId newStartupApp = RenpyLauncher.LauncherAppId.Bios;
-            if (!SaveManager.HasIteractedFile().GetAwaiter().GetResult())
-            {
-                LauncherMain.LoadDDLCScene = true;
-                newStartupApp = RenpyLauncher.LauncherAppId.DokiDoki;
-            }
-            
-            if (newStartupApp == RenpyLauncher.LauncherAppId.Bios)
+           
+            if (SaveManager.HasIteractedFile().GetAwaiter().GetResult())
             {
                 Type[] types = { typeof(RenpyLauncher.LauncherAppId) };
                 var GetAppIndex = Traverse.Create(__instance).Method("GetAppIndex", paramTypes: types);
@@ -56,7 +49,8 @@ namespace SkipStartup
             }
             else
             {
-                __instance.SwitchToApp(newStartupApp).Wait();
+                RenpyLauncher.LauncherMain.LoadDDLCScene = true;
+                __instance.SwitchToApp(RenpyLauncher.LauncherAppId.DokiDoki).Wait();
             }
 
             return false;
